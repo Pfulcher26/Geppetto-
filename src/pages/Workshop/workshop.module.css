@@ -48,10 +48,11 @@
     border: 1px solid #000000;
     border-radius: 4px;
     margin-bottom: 24px;
+    font-size: 1.3rem; 
     box-shadow: rgba(52, 51, 51, 0.17) 0px -23px 25px 0px inset, rgba(107, 105, 105, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
   }
   .main ::placeholder {
-    color: #8e8ea0;
+    color: #565555;
     opacity: 1;
   }
   
@@ -63,11 +64,13 @@
     border-radius: 4px;
     text-align: center;
     cursor: pointer;
+    font-size: 1.7rem; 
   }
   .main .result {
     font-weight: bold;
-    margin: 40px;
+    margin: 30px;
     width: 600px;
+    font-size: 1.4rem; 
   }
 
   .main .button{
@@ -78,6 +81,7 @@
     border-radius: 4px;
     flex-direction: row; 
     font-size: 16px;
+    font-size: 1.3rem; 
   }
   
   .main input[type="submit"]:hover{
