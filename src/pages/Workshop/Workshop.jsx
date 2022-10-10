@@ -32,6 +32,7 @@ export default function Workshop() {
         <h3>Create a Puppet</h3>
         <form onSubmit={onSubmit}>
           <input
+            autoFocus
             type="text"
             name="name"
             placeholder="Your puppet's name"
