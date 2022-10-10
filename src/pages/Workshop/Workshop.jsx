@@ -20,7 +20,7 @@ export default function Workshop() {
   return (
     <div>
       <main className={styles.main}>
-        <img src="/geppetto.jpg" className={styles.icon} />
+        <img src="/images/geppetto.jpg" className={styles.icon} />
         <h3>Create a Puppet</h3>
         <form onSubmit={onSubmit}>
           <input
