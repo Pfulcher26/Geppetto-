@@ -13,7 +13,6 @@
     font-style: normal;
   }
   
-  
   .main,
   .main input {
     font-size: 16px;
@@ -21,6 +20,7 @@
     color: #353740;
     font-family: "Vollkorn";
   }
+
   .main {
     display: flex;
     flex-direction: column;
@@ -65,7 +65,25 @@
   }
   .main .result {
     font-weight: bold;
-    margin-top: 40px;
+    margin: 40px;
     width: 600px;
   }
+
+  .main .button{
+    font-family: 'Vollkorn';
+    color: black;
+    background-color: white; 
+    border: 1px solid #000000;
+    border-radius: 4px;
+    flex-direction: row; 
+    font-size: 16px;
+  }
   
+  .main input[type="submit"]:hover{
+    background-color: rgb(167, 161, 161);
+    color: black;  
+  }
+  
+  .button:hover{
+    background-color: rgb(218, 215, 215); 
+  }

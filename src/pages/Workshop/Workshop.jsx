@@ -4,19 +4,26 @@ import * as puppetsAPI from '../../utilities/puppets-api';
 
 export default function Workshop() {
   const [puppetInput, setPuppetInput] = useState({name:"", personality:"", dream:"", story:""});
-  const [result, setResult] = useState();
+  // const [result, setResult] = useState();
 
+  async function createPuppet(){
+    const data = await puppetsAPI.createPuppet({puppetInput})
+    setPuppetInput({...puppetInput, story: data.result});
+    }
+
+  async function savePuppet(){
+    await puppetsAPI.savePuppet({puppetInput})
+    }   
+
+  async function refresh(){
+    setPuppetInput({name:"", personality:"", dream:"", story:""})
+    }   
 
   async function onSubmit(event) {
     event.preventDefault();
-    async function createPuppet(){
-    const data = await puppetsAPI.createPuppet({puppetInput})
-    setPuppetInput({...puppetInput, story: data.result})
-    // setResult(data.result);
-    setPuppetInput({name:"", personality:"", dream:""});
-    }
     createPuppet();
   }
+  
 
   return (
     <div>
@@ -48,6 +55,10 @@ export default function Workshop() {
           <input type="submit" value="Create" />
         </form>
         <div className={styles.result}>{puppetInput.story}</div>
+        <div>
+        <button className={styles.button} onClick={savePuppet}>save</button>
+        <button className={styles.button} onClick={refresh}>refresh</button>
+        </div>
       </main>
     </div>
   );

@@ -3,7 +3,7 @@ import {useState} from 'react';
 // Import the following components
 import AuthPage from '../AuthPage/AuthPage';
 import Workshop from '../Workshop/Workshop';
-import Prototypes from '../OrderHistoryPage/Prototypes';
+import Prototypes from '../Prototype.jsx/Prototypes';
 import {Routes, Route} from 'react-router-dom';
 import NavBar from '../../components/NavBar/NavBar';
 import {getUser} from '../../utilities/users-service';
