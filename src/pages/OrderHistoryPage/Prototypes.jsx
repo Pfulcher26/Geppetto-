@@ -1,11 +1,11 @@
 import {checkToken} from "../../utilities/users-service";
 
 export default function Prototypes() {
-    async function handleCheckToken() {
-        // calling checkToken from service layer
-        const expDate = await checkToken();
-        console.log(`expDate is ${expDate}`);
-    }
+    // async function handleCheckToken() {
+    //     // calling checkToken from service layer
+    //     const expDate = await checkToken();
+    //     console.log(`expDate is ${expDate}`);
+    // }
 
     return (
         <>

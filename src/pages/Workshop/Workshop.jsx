@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import styles from "./index.module.css";
+import styles from "./workshop.module.css";
 import * as puppetsAPI from '../../utilities/puppets-api';
 
 export default function Workshop() {
-  const [puppetInput, setPuppetInput] = useState({name:"", personality:"", dream:""});
+  const [puppetInput, setPuppetInput] = useState({name:"", personality:"", dream:"", story:""});
   const [result, setResult] = useState();
 
 
@@ -11,7 +11,8 @@ export default function Workshop() {
     event.preventDefault();
     async function createPuppet(){
     const data = await puppetsAPI.createPuppet({puppetInput})
-    setResult(data.result);
+    setPuppetInput({...puppetInput, story: data.result})
+    // setResult(data.result);
     setPuppetInput({name:"", personality:"", dream:""});
     }
     createPuppet();
@@ -46,7 +47,7 @@ export default function Workshop() {
           />
           <input type="submit" value="Create" />
         </form>
-        <div className={styles.result}>{result}</div>
+        <div className={styles.result}>{puppetInput.story}</div>
       </main>
     </div>
   );
