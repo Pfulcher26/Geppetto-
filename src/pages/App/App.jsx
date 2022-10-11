@@ -3,6 +3,7 @@ import {useState} from 'react';
 // Import the following components
 import AuthPage from '../AuthPage/AuthPage';
 import Workshop from '../Workshop/Workshop';
+import Homepage from '../HomePage/Homepage';
 import Prototypes from '../Prototype.jsx/Prototypes';
 import {Routes, Route} from 'react-router-dom';
 import NavBar from '../../components/NavBar/NavBar';
@@ -21,6 +22,7 @@ function App() {
                     <Routes>
                         <Route path="/workshop" element={<Workshop/>}/>
                         <Route path="/prototypes" element={<Prototypes/>}/>
+                        <Route path="/home" element={<Homepage/>}/>
                     </Routes>
                 </>
                 :

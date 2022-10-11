@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import {useState, useNavigate} from 'react';
 import * as usersService from '../../utilities/users-service';
 import styles from "./login-form.module.css";
 
@@ -10,11 +10,11 @@ export default function LoginForm({setUser}) {
     });
     // error code is set to empty string
     const [error, setError] = useState('');
-
+    
     // on change grab the data and update the state
     function handleChange(evt) {
         setCredentials({...credentials, [evt.target.name]: evt.target.value});
-        setError('');
+        setError(''); 
     }
 
     // on submit call the API endpoint and setUser state

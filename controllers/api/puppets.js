@@ -28,11 +28,10 @@ function save(req, res){
       if (err) return res.redirect('/workshop');
       res.redirect('/workshop');
   });
-  console.log(req.body.puppetInput)
 }
 
 async function index(req, res) {
-  const items = await Puppet.find({}).sort('name');
+  const items = await Puppet.find({user: req.user._id}).sort('name');
   res.json(items);
 }
 

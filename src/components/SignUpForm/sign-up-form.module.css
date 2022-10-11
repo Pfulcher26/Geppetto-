@@ -14,6 +14,7 @@
 }
 
 .button{
-    color: black; 
+    background-color: rgb(250, 217, 217);
+    color: rgb(21, 21, 21);
     font-family: "Vollkorn";
 }
