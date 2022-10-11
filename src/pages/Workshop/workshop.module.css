@@ -59,7 +59,7 @@
   .main input[type="submit"] {
     padding: 12px 0;
     color: #fff;
-    background-color: #000000;
+    background-color: rgb(143, 44, 44);
     border: none;
     border-radius: 4px;
     text-align: center;
@@ -85,12 +85,12 @@
   }
   
   .main input[type="submit"]:hover{
-    background-color: rgb(255, 249, 249);
-    color: black;  
-    border: 1px solid #812828;
+    background-color: #844c4c;
+    color:whitesmoke; 
+    border: 1px solid rgb(143, 44, 44);
   }
   
   .button:hover{
-    background-color: #812828; 
+    background-color: rgb(143, 44, 44); 
     color:whitesmoke;
   }

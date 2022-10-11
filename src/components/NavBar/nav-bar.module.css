@@ -1,0 +1,15 @@
+.nav a {
+    font-size: 1.1rem;
+    line-height: 24px;
+    color: #353740;
+    font-family: "Vollkorn";
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-decoration: none;
+}
+
+.nav a:hover{
+    color: rgb(234, 102, 102)
+}

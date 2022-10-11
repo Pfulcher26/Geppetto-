@@ -2,4 +2,6 @@
     .entries{
     border: 1px solid #d5bebe;
     padding: 15px; 
+    background-color: rgb(250, 243, 243);
+    color: rgb(37, 11, 11);
   }
