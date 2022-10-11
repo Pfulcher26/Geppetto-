@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&display=swap');
 
-    .entries{
+.entries{
     border: 1px solid #d5bebe;
     padding: 15px; 
     background-color: rgb(250, 243, 243);
     color: rgb(37, 11, 11);
     margin: 1px; 
+  }
+
+  .delete{
+    font-family:"Alkalami";
+    font-size: 1.2rem; 
   }
