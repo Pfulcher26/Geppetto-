@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "Vollkorn";
+    src: url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.formcontainer{
+    border: 1px solid #d5bebe;
+    padding: 50px; 
+    background-color: rgb(250, 243, 243);
+    color: rgb(37, 11, 11);
+    margin: 30px; 
+}
+
+.button{
+    color: black; 
+    font-family: "Vollkorn";
+}

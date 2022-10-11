@@ -1,5 +1,6 @@
 import {useState} from 'react';
 import * as usersService from '../../utilities/users-service';
+import styles from "./login-form.module.css";
 
 export default function LoginForm({setUser}) {
     // initial state, username and password is set to empty string
@@ -33,14 +34,14 @@ export default function LoginForm({setUser}) {
 
     return (
         <div>
-            <div className="form-container">
+            <div className={styles.formContainer}>
                 <form autoComplete="off" onSubmit={handleSubmit}>
                     <label>Email</label>
-                    <input type="text" name="email" value={credentials.email} onChange={handleChange} required/>
+                    <input autoFocus type="text" name="email" value={credentials.email} onChange={handleChange} required/>
                     <label>Password</label>
                     <input type="password" name="password" value={credentials.password} onChange={handleChange}
                            required/>
-                    <button type="submit">Log In</button>
+                    <button className={styles.button} type="submit">Log In</button>
                 </form>
             </div>
             <p className="error-message">&nbsp;{error}</p>

@@ -12,11 +12,12 @@ export default function Workshop() {
     }
 
   async function savePuppet(){
-    await puppetsAPI.savePuppet({puppetInput})
+    await puppetsAPI.savePuppet({puppetInput});
+    setPuppetInput({name:"", personality:"", dream:"", story:""});
     }   
 
   async function refresh(){
-    setPuppetInput({name:"", personality:"", dream:"", story:""})
+    setPuppetInput({name:"", personality:"", dream:"", story:""});
     }   
 
   async function onSubmit(event) {
@@ -28,8 +29,8 @@ export default function Workshop() {
   return (
     <div>
       <main className={styles.main}>
+      <h3>Workshop</h3>
         <img src="/images/geppetto.jpg" className={styles.icon} />
-        <h3>Create a Puppet</h3>
         <form onSubmit={onSubmit}>
           <input
             autoFocus

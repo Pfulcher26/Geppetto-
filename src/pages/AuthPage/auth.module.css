@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "Vollkorn";
+    src: url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.button {
+    padding: 15px; 
+    background-color: rgb(37, 11, 11);
+    color: rgb(255, 255, 255);
+    font-family: "Vollkorn";
+}
+
+.image {
+    width: 250px; 
+}
+
+.heading {
+    font-size: 2rem;
+}
