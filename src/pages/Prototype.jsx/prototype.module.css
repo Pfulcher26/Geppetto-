@@ -1,20 +1,14 @@
-@font-face {
-    font-family: "Vollkorn";
-    src: url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
-    font-weight: bold;
-    font-style: normal;
-  }
-  
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&display=swap');
 
   .main {
     font-size: 16px;
     line-height: 24px;
     color: #353740;
-    font-family: "Vollkorn";
+    font-family: "Alkalami";
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 60px;
+    padding-top: 30px;
   }
   .main .icon {
     width: 466px;

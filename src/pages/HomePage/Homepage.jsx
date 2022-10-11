@@ -1,12 +1,13 @@
 import React from 'react'
 import NavBar from '../../components/NavBar/NavBar'
+import styles from './homepage.module.css'
 
 export default function Homepage() {
   return (
-    <div> 
+    <div className={styles.main}> 
         <h1>Welcome to Geppetto</h1>
-        <p>A website that utilizes the Davinci 2 AI to let you wish upon a falling star.</p>
-        <img src="/images/singup.jpg"/>
+        <span className={styles.description}><p>A website that utilizes the Davinci 2 AI to let you wish upon a falling star.</p></span>
+        <img className={styles.image} src="/images/awe.jpg"/>
     </div>
   )
 }
