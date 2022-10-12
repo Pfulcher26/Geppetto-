@@ -11,12 +11,12 @@ export default function Workshop() {
     setPuppetInput({...puppetInput, story: data.result});
     }
 
-  async function savePuppet(){
-    await puppetsAPI.savePuppet({puppetInput});
+  function savePuppet(){
+    puppetsAPI.savePuppet({puppetInput});
     refresh();
     }   
 
-  async function refresh(){
+  function refresh(){
     setPuppetInput({name:"", personality:"", dream:"", story:""});
     }   
 
