@@ -21,11 +21,15 @@ export default function Prototypes() {
 
     
     function deleteItem(item){
-        puppetsAPI.deletePuppet(item);
-        const updatePuppets = puppetArray.filter(function(puppet) {
-            return puppet._id !== item._id;
-            });
-        setPuppetArray(...puppetArray, updatePuppets);
+        try {
+            puppetsAPI.deletePuppet(item);
+            const updatePuppets = puppetArray.filter(function(puppet) {
+                return puppet._id !== item._id;
+                });
+            setPuppetArray(...puppetArray, updatePuppets);
+        } catch {
+            console.log('delete failed');
+        }
     }
     
 
