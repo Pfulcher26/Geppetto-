@@ -5,8 +5,8 @@ import AuthPage from '../AuthPage/AuthPage';
 import Workshop from '../Workshop/Workshop';
 import Homepage from '../HomePage/Homepage';
 import Prototypes from '../Prototype.jsx/Prototypes';
-import {Routes, Route, Navigate} from 'react-router-dom';
 import NavBar from '../../components/NavBar/NavBar';
+import {Routes, Route, Navigate} from 'react-router-dom';
 import {getUser} from '../../utilities/users-service';
 
 function App() {
