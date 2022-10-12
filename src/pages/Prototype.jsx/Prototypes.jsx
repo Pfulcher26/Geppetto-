@@ -1,27 +1,34 @@
 import { useState, useEffect } from 'react';
 // import styles from "./workshop.module.css";
+import { useNavigate } from 'react-router-dom';
 import * as puppetsAPI from '../../utilities/puppets-api';
 import PuppetEntry from '../../components/PuppetEntry/PuppetEntry';
 import styles from "./prototype.module.css";
 
 export default function Prototypes() {
+
+    const navigate = useNavigate();
     const[puppetArray, setPuppetArray] = useState([]);
 
     useEffect(function () {
         async function getItems() {
             const items = await puppetsAPI.getAll();
-            setPuppetArray(items);
+            setPuppetArray(...puppetArray, items);
             }
         getItems();
     }, []);
 
-    async function deleteItem(item){
-        await puppetsAPI.deletePuppet(item);
+
+    
+    function deleteItem(item){
+        puppetsAPI.deletePuppet(item);
+        const updatePuppets = puppetArray.filter(function(puppet) {
+            return puppet._id !== item._id;
+            });
+        setPuppetArray(...puppetArray, updatePuppets);
     }
     
 
-
-    
     const puppetItem = puppetArray.map((value) => <PuppetEntry deleteItem={deleteItem} item={value} index={value._id} />);
     return (
         <>
