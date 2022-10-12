@@ -13,3 +13,14 @@
 .image {
     width: 700px; 
 }
+
+.email {
+    text-decoration: none; 
+    color: black; 
+    border: .5px solid;
+    padding: 5px;  
+}
+.email:hover {
+    text-decoration: none; 
+    color: red; 
+}
