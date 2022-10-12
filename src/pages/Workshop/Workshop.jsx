@@ -16,7 +16,7 @@ export default function Workshop() {
     refresh();
     }   
 
-  async function refresh(){
+  function refresh(){
     setPuppetInput({name:"", personality:"", dream:"", story:""});
     }   
 

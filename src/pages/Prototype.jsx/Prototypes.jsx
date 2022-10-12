@@ -14,8 +14,15 @@ export default function Prototypes() {
             }
         getItems();
     }, []);
+
+    async function deleteItem(item){
+        await puppetsAPI.deletePuppet(item);
+    }
     
-    const puppetItem = puppetArray.map((value) => <PuppetEntry item={value} index={value._id} />);
+
+
+    
+    const puppetItem = puppetArray.map((value) => <PuppetEntry deleteItem={deleteItem} item={value} index={value._id} />);
     return (
         <>
         <main className={styles.main}>
