@@ -1,10 +1,11 @@
 import React from 'react'
 import styles from "./puppet-entry.module.css";
+import * as puppetsAPI from '../../utilities/puppets-api';
 
 export default function PuppetEntry({item, index}) {
-    
+
     function deleteItem() {
-    alert(item._id)
+    puppetsAPI.deletePuppet({item})
   }
 
   return (

@@ -13,7 +13,7 @@ export default function Workshop() {
 
   async function savePuppet(){
     await puppetsAPI.savePuppet({puppetInput});
-    setPuppetInput({name:"", personality:"", dream:"", story:""});
+    refresh();
     }   
 
   async function refresh(){

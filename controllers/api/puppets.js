@@ -35,8 +35,21 @@ async function index(req, res) {
   res.json(items);
 }
 
+function deletePuppet(req, res) {
+  let id = req.body.item._id;
+  Puppet.findByIdAndDelete(id, function (err) {
+    if (err){
+        console.log(err)
+    }
+    else{
+        console.log("it worked");
+    }
+});
+}
+
 module.exports = {
     create, 
     save,
-    index
+    index,
+    deletePuppet
 };

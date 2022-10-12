@@ -14,3 +14,7 @@ export function savePuppet(puppet) {
     return sendRequest(`${BASE_URL}/save`, 'POST', puppet);
 }
 
+export function deletePuppet(id) {
+    return sendRequest(`${BASE_URL}/delete`, 'DELETE', id);
+}
+

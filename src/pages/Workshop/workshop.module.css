@@ -31,7 +31,7 @@
     width: 320px;
   }
   .main input[type="text"] {
-    padding: 12px 16px;
+    padding: 15px;
     border: 1px solid #000000;
     border-radius: 4px;
     margin: 24px 24px 24px 24px;
@@ -44,7 +44,7 @@
   }
   
   .main input[type="submit"] {
-    padding: 12px 0;
+    padding: 10px;
     border: solid .5px #957171;
     background-color: rgb(250, 243, 243);
     color: rgb(37, 11, 11);

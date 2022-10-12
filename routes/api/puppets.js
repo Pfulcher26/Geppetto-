@@ -7,6 +7,7 @@ router.get('/', puppetsCtrl.index);
 //POST /api/puppets/create
 router.post('/create', puppetsCtrl.create)
 router.post('/save', puppetsCtrl.save)
+router.delete('/delete', puppetsCtrl.deletePuppet)
 
 module.exports = router; 
 
