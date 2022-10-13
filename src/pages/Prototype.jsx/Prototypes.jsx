@@ -1,15 +1,14 @@
 import { useState, useEffect } from 'react';
 // import styles from "./workshop.module.css";
-import { useNavigate } from 'react-router-dom';
 import * as puppetsAPI from '../../utilities/puppets-api';
 import PuppetEntry from '../../components/PuppetEntry/PuppetEntry';
 import styles from "./prototype.module.css";
 
 export default function Prototypes() {
-
-    const navigate = useNavigate();
+    // Sets the state as puppetArray, which will hold the puppets the user creates 
     const[puppetArray, setPuppetArray] = useState([]);
 
+    // Gets all entries in the Puppet Collection via the puppets API and sets the state to the response 
     useEffect(function () {
         async function getItems() {
             const items = await puppetsAPI.getAll();
@@ -33,7 +32,7 @@ export default function Prototypes() {
     }
     
 
-    const puppetItem = puppetArray.map((value) => <PuppetEntry deleteItem={deleteItem} item={value} index={value._id} />);
+    const puppetItem = puppetArray.map((value) => <PuppetEntry deleteItem={deleteItem} item={value} key={value._id} />);
     return (
         <>
         <main className={styles.main}>

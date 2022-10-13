@@ -51,6 +51,7 @@ function deletePuppet(req, res) {
     else{
         console.log("it worked");
     }
+    res.json('deleted deck');
 });
 }
 
