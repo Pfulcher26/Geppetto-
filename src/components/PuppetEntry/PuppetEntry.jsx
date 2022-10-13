@@ -5,8 +5,7 @@ import * as puppetsAPI from '../../utilities/puppets-api';
 
 export default function PuppetEntry({item, setPuppetArray, puppetArray }) {
     
-    // handleDelete is triggered on button click, calls the deleteItem function that has been passed down as a prop from Prototypes.jsx
-    // and passes the value of the item prop, which corresponds to an individual puppet element in the user array 
+    // handleDelete is triggered on button click, calls the deletePuppet function from puppetsAPI, deletes the current item, then updates state by filtering results based on id 
     async function handleDelete(){
       try {
           await puppetsAPI.deletePuppet({item});
@@ -17,7 +16,7 @@ export default function PuppetEntry({item, setPuppetArray, puppetArray }) {
       }
   }
     
-    // Displays the name property of the puppet item, as well as the story and a button to handle deleting the item 
+    // Displays the name property and story property of the puppet item, as well as a button that calls the handleDelete function
   return (
     <>
     <div className={styles.entries} >

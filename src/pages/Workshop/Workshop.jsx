@@ -6,20 +6,25 @@ export default function Workshop() {
   const [puppetInput, setPuppetInput] = useState({name:"", personality:"", dream:"", story:""});
   // const [result, setResult] = useState();
 
+  // calls the OpenAI Api sending the current state of puppetInput as a payload, then sets the story attribute
+  // in state based on the response 
   async function createPuppet(){
     const data = await puppetsAPI.createPuppet({puppetInput})
     setPuppetInput({...puppetInput, story: data.result});
     }
 
+  // saves a new puppet to the database and refreshes the page 
   function savePuppet(){
     puppetsAPI.savePuppet({puppetInput});
     refresh();
     }   
 
+  // resets state
   function refresh(){
     setPuppetInput({name:"", personality:"", dream:"", story:""});
     }   
 
+  // Calls the createPuppet function upon submission of the form 
   async function onSubmit(event) {
     event.preventDefault();
     createPuppet();

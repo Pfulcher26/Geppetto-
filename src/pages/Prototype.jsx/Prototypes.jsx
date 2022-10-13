@@ -18,8 +18,8 @@ export default function Prototypes() {
         getItems();
     }, []);
 
-
-    const puppetItem = puppetArray.map((value) => <PuppetEntry puppetArray={puppetArray} setPuppetArray={setPuppetArray} item={value} key={value._id} index={value} />);
+    //maps all objects of the puppetArray to the PuppetEntry component, passes down setPuppetArray, puppetArray and value of the current object in the array
+    const puppetItem = puppetArray.map((value) => <PuppetEntry puppetArray={puppetArray} setPuppetArray={setPuppetArray} item={value} key={value._id} />);
     return (
         <>
         <main className={styles.main}>
