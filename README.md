@@ -1,7 +1,20 @@
-##### Utilities, Services, APIs, oh my...
+# ***Geppetto**
 
-- Utility modules: general purpose functions
+*A website that utilizes the DaVinci 2 AI to let you wish upon a star.*
 
-- Service modules: specific logic such as functions for signing-up or logging in a user. Service modules often use and depend upon API modules...
+<a  href="https://the-weather-tomorrow.herokuapp.com/"  target="_blank">See website</a>
 
-- API modules: logic that make network requests such as AJAX calls to the backend or third-party APIs.
+## What is Geppetto?  
+
+Geppetto is a Fullstack MERN application that utilizes the DaVinci 2 text generation AI from OpenAI to allow users to create custom 'puppets'.
+
+Pleaset note: 
+
+AI is a powerful tool with boundless potential, as such it is important that we use it responsibly and with humanity.
+
+Users with any concerns, please feel free to email me at pfulcher26@gmail.com 
+
+## What is DaVinci 2?
+
+
+
