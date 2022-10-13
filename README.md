@@ -2,7 +2,7 @@
 
 *A website that utilizes the DaVinci 2 AI to let you wish upon a star.*
 
-![geppetto logo, an image of pinocchio staring up at geppetto](https://i.imgur.com/ZJbd49M.jpg)
+![geppetto logo, an image of pinocchio staring up at geppetto](https://i.imgur.com/tzGCXcl.png)
 
 
 ## What is Geppetto?  
@@ -26,6 +26,15 @@ DaVinci 2 is an AI model developed by OpenAI that focuses on understanding and g
 Geppetto makes use the text-completion endpoint of the DaVinci 2 AI.  Below is an example request in Node.js using the text-completion endpoint: 
 
 ![an example of a DaVinci 2 api request using the text-completion endpoint](https://i.imgur.com/m5nzs53.png)
+
+The prompt is given to the AI model to generate text, along with a temperature that indicates how closely the model will adhere to the prompt instructions. 
+
+## DaVinci 2 with React 
+
+The functionality of Geppetto hinges on accepting custom user inputs that are then set as state and provides as a payload within the restful API request, so that they can then be interpolated into a prompt generator function that is passed to the OpenAI API call as the prompt attribute. 
+
+Let's break it down:
+
 
 
 
