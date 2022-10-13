@@ -18,9 +18,9 @@
     text-decoration: none; 
     color: black; 
     border: .5px solid;
-    padding: 5px;  
+    padding: 3px;  
 }
 .email:hover {
     text-decoration: none; 
-    color: red; 
+    color: rgb(234, 102, 102)
 }
