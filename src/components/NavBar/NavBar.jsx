@@ -11,9 +11,9 @@ export default function NavBar({user, setUser}) {
 
     return (
         <nav className={styles.nav}>
-            <Link to="/workshop">Workshop</Link>
-            &nbsp; &nbsp; &nbsp; &nbsp;
             <Link to="/prototypes">Prototypes</Link>
+            &nbsp; &nbsp; &nbsp; &nbsp;
+            <Link to="/workshop">Workshop</Link>
             &nbsp; &nbsp; &nbsp; &nbsp;
             <Link to="/home">home</Link>
             &nbsp; &nbsp; &nbsp; &nbsp;
