@@ -7,10 +7,11 @@ import styles from "./prototype.module.css";
 export default function Prototypes() {
     // Sets the state as puppetArray, which will hold the puppets the user creates 
     const[puppetArray, setPuppetArray] = useState([]);
+  
 
-    // Gets all entries in the Puppet Collection via the puppets API and sets the state to the response 
+    // Gets all entries in the Puppet Collection via an AJAX request sent by the puppets API and sets the state to the response 
     useEffect(function () {
-        async function getItems() {
+        async function getItems() { 
             const items = await puppetsAPI.getAll();
             setPuppetArray(...puppetArray, items);
             }
@@ -18,21 +19,7 @@ export default function Prototypes() {
     }, []);
 
 
-    
-    function deleteItem(item){
-        try {
-            puppetsAPI.deletePuppet(item);
-            const updatePuppets = puppetArray.filter(function(puppet) {
-                return puppet._id !== item._id;
-                });
-            setPuppetArray(...puppetArray, updatePuppets);
-        } catch {
-            console.log('delete failed');
-        }
-    }
-    
-
-    const puppetItem = puppetArray.map((value) => <PuppetEntry deleteItem={deleteItem} item={value} key={value._id} />);
+    const puppetItem = puppetArray.map((value) => <PuppetEntry puppetArray={puppetArray} setPuppetArray={setPuppetArray} item={value} key={value._id} index={value} />);
     return (
         <>
         <main className={styles.main}>
