@@ -75,19 +75,37 @@ And that's it!
 
 ## Design 
 
-Geppetto was designed using raw CSS with the exception of Bootstrap to make the navbar responsive.  Mediaqueries were added for small screen devices.  
+Geppetto was designed using raw CSS with the exception of Bootstrap to make the navbar responsive.  Media queries were added for small screen devices.  
 
 Here is a link to the project's <a  href="https://whimsical.com/gepetto-FRkCLFx9oahpjUKvNBzssa"  target="_blank">Whimsical</a>.
 
-
 Below are a few selections comparing the planned UI to the final draft:
 
+Whimsical:
+![Whimsical Homepage](https://i.imgur.com/uQtDXPe.png)
+
+Finished UI:
+![Finished Homepage](https://i.imgur.com/dy2oc5H.png)
+
+Whimsical:
+![Whimsical Workshop](https://i.imgur.com/TsjUIN0.png)
+
+Finished UI: 
+![Finished Workshop](https://i.imgur.com/fh1oKfP.png)
+
+Whimsical: 
+![Whimsical for Prototypes](https://i.imgur.com/02K7aXq.png)
+
+Finished UI:
+![Finished Prototypes](https://i.imgur.com/BxcGfzk.png)
 
 All illustrations are by <a  href="https://en.wikipedia.org/wiki/Carlo_Chiostri"  target="_blank">Chiostri frenzi</a>, an Italian illustrator from the late 1900's. 
 
 ![Title page from the 1902 edition of Pinocchio](https://i.imgur.com/EErh0j4.png)
 
+## Technologies Used 
+This is a full stack MERN application (Mongoose, Express, React, Node) that utilizes OpenAI's DaVinci2 text-processing AI model.  
 
-
-
+## Future Plans
+I would like to make this site more accessible by using the <a  href="https://app.uberduck.ai/" target="_blank">UberDuck AI API</a> to incorporate text-to-speech functionality, as well as build unit tests using Jest. 
 
