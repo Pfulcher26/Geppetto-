@@ -34,7 +34,7 @@ export default function Workshop() {
   return (
     <div>
       <main className={styles.main}>
-      <h3>Workshop</h3>
+      <h3 className={styles.header}>Workshop</h3>
         <img src="/images/geppetto.jpg" className={styles.icon} />
         <form onSubmit={onSubmit}>
           <input
