@@ -31,4 +31,8 @@
     .main .entries{
         width: 350px;
     }
+
+    .main .icon {
+      width: 366px;
+    }
   }
