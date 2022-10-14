@@ -22,7 +22,9 @@ async function create(req, res) {
 
 //Takes values passed down via the req.body.puppetInput and interpolates them into the prompt string that is fed to the prompt when API is called above
 function generatePrompt(puppet) {
-  return `Your name is ${puppet.name}.  You want ${puppet.dream}.  You are ${puppet.personality}.  Tell me your name and a long, crazy story about yourself.`;
+  return `Your name is ${puppet.name}.  You want ${puppet.dream}.  
+  You are ${puppet.personality}.  
+  Tell me your name and a long, crazy story about yourself.`;
 }
 
 //Takes the payload in the form of req.body.puppetInput and creates a new instance of the Puppet model and saves it to mongoose 

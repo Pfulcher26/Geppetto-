@@ -2,7 +2,7 @@
   
   .main,
   .main input {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 24px;
     color: #353740;
     font-family: "Alkalami";
@@ -20,10 +20,10 @@
   }
   
   .main h3 {
-    font-size: 32px;
+    font-size: 60px;
     line-height: 40px;
-    font-weight: bold;
     color: #353740;
+    margin-top: 50px; 
   }
   .main form {
     display: flex;
@@ -80,4 +80,11 @@
   
   .button:hover{
     text-decoration: underline;
+  }
+ 
+
+  @media only screen and (max-width: 500px) {
+    .main{
+        width: 200px;
+    }
   }

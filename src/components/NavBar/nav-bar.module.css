@@ -1,23 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Alkalami&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script=swap');
 
 .nav {
-    color:rgb(0, 0, 0);
     font-family: 'alkalami'; 
 }
 
 .nav a {
     font-size: 1.1rem;
-    line-height: 24px;
     color: #353740;
-    font-family: "Vollkorn";
-    flex-direction: column;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
     text-decoration: none;
-    font-family: "alkalami"
+    font-family: "alkalami";
 }
 
 .nav a:hover{
     color: rgb(234, 102, 102)
 }
+
+@media only screen and (max-width: 500px) {
+    .nav{
+        height: 5px; 
+        width: 20px; 
+    }
+  }

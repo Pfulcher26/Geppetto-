@@ -2,7 +2,7 @@
 
   .main {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 35px;
     color: #353740;
     font-family: "Alkalami";
     display: flex;
@@ -21,5 +21,14 @@
     font-size: 1.7rem; 
     padding: 15px; 
   }
+
+  .main h1 {
+    font-size: 60px; 
+    margin: 30px; 
+  }
   
- 
+  @media only screen and (max-width: 500px) {
+    .main .entries{
+        width: 350px;
+    }
+  }
