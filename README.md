@@ -29,13 +29,34 @@ Geppetto makes use the text-completion endpoint of the DaVinci 2 AI.  Below is a
 
 The prompt is given to the AI model to generate text, along with a temperature that indicates how closely the model will adhere to the prompt instructions. 
 
-## DaVinci 2 with React 
+## DaVinci 2 with React/MERN stack
 
 The functionality of Geppetto hinges on accepting custom user inputs that are then set as state and provides as a payload within the restful API request, so that they can then be interpolated into a prompt generator function that is passed to the OpenAI API call as the prompt attribute. 
 
 Let's break it down:
 
+Users provide input corresponding to different attributes of their custom model.  
 
+![UI for the user input](https://i.imgur.com/eKwra8s.png)
 
+The input is captured in state and then passed to a function called from the puppets API.
 
+![react function that captures the state and calls api middleware](https://i.imgur.com/Quuf7GO.png)
 
+The API acts as middleware, sending an AJAX request to the backend. 
+
+![api request to backend](https://i.imgur.com/dJyM5ff.png)
+
+The /create route is pinged and the corresponding function called from the controller. 
+
+![the create route within the routes module](https://i.imgur.com/F7TPwsX.png)
+
+The create function calls the OpenAI API, passing a custom prompt generated using the generatePrompt function.  
+
+![OpenAI's API is called with custom prompt](https://i.imgur.com/kEJoMvh.png)
+
+The generatePrompt function takes the payload, containing the state of the model the user is creating, and returns a custom prompt by interpolating the user input.  The custom prompt is sent to the API and the reponse is parsed from the json and returned to the front-end where it is used to update the state and display the completion on the UI. 
+
+![the generate prompt function that interpolates the payload from the front-end](https://i.imgur.com/3FaqQh2.png)
+
+## Design 
