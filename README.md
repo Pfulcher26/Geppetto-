@@ -9,9 +9,9 @@
 
 ## What is Geppetto?  
 
-Geppetto is a Fullstack MERN application that utilizes the DaVinci 2 text completion AI from OpenAI to allow users to create custom AI models, or 'puppets'.
+General Assembly capstone project.  Geppetto is a Fullstack MERN application that utilizes the DaVinci 2 AI text processing model to allow users to create custom 'puppets', each with their own AI generated story. 
 
-Pleaset note: 
+Please note: 
 
 AI is a powerful tool with boundless potential, as such it is important that we use it responsibly and with humanity.
 
@@ -104,6 +104,20 @@ Finished UI:
 All illustrations are by <a  href="https://en.wikipedia.org/wiki/Carlo_Chiostri"  target="_blank">Chiostri frenzi</a>, an Italian illustrator from the late 1900's. 
 
 ![Title page from the 1902 edition of Pinocchio](https://i.imgur.com/EErh0j4.png)
+
+## Models and ERD 
+Geppetoo uses a very simple model scheme in conjunction with MongooseDB to achieve its CRUD.  
+
+Below is an image of the Entity Relationship Diagram made for this project using Lucidchart:
+
+![Entity Relationship Diagram for Geppetto models](https://i.imgur.com/qUcG1X0.png)
+
+## Challenges 
+The most difficult part of this project was, thankfully, not the incorporation of OpenAI's API.  OpenAI's documentation is thorough and even provides starter project examples to help developers jump right into coding.  
+
+Most of the challenges encountered had to do with updating state in React.  There were certain instances where functions that should have been nested within child components were in the parent component, causing state issues that affected the map function from working properly.  Due to the asynchronous nature of certain functions and state updates, state was at least momentarily set to undefined.  
+
+My takewaway is that state change should take place within the components directly affecting that change by passing state and setState down as props to the child component.  Once I adopted this approach the project flowed smoothly.  
 
 ## Technologies Used 
 This is a full stack MERN application (Mongoose, Express, React, Node) that utilizes OpenAI's DaVinci2 text-processing AI model.  
