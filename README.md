@@ -2,6 +2,8 @@
 
 *A website that utilizes the DaVinci 2 AI to let you wish upon a star.*
 
+<a  href="https://geppettoapp.herokuapp.com/home"  target="_blank">Go to live site</a>
+
 ![geppetto logo, an image of pinocchio staring up at geppetto](https://i.imgur.com/tzGCXcl.png)
 
 
