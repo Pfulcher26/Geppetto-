@@ -2,23 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script=swap');
 
 .nav {
-    color:rgb(0, 0, 0);
     font-family: 'alkalami'; 
-    height: 30px;
-    margin: 20px; 
 }
 
 .nav a {
     font-size: 1.1rem;
-    line-height: 24px;
     color: #353740;
-    font-family: "Vollkorn";
-    flex-direction: column;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
     text-decoration: none;
-    font-family: "alkalami"
+    font-family: "alkalami";
 }
 
 .nav a:hover{

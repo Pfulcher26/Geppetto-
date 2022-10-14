@@ -3,8 +3,12 @@
 .main {
     font-family: "Alkalami";
     color: #353740;
-    margin: 40px; 
+    margin: 50px; 
     width: 600px;
+}
+
+.main h1 {
+    font-size: 50px; 
 }
 
 .description{
@@ -30,7 +34,7 @@
     .main{
         width: 300px;
     }
-    
+
     .main .image{
         width: 300px;
     }
