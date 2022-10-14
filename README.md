@@ -43,7 +43,7 @@ Users provide input corresponding to different attributes of their custom model.
 
 ![UI for the user input](https://i.imgur.com/eKwra8s.png)
 
-The input is captured in state and then passed to a function called from the puppets API.
+The input is captured in state and then passed to an API request called from the puppets API.
 
 ![react function that captures the state and calls api middleware](https://i.imgur.com/Quuf7GO.png)
 
@@ -51,7 +51,7 @@ The API acts as middleware, sending an AJAX request to the backend.
 
 ![api request to backend](https://i.imgur.com/dJyM5ff.png)
 
-The /create route is pinged and the corresponding function called from the controller. 
+The create route is pinged and the corresponding function called from the controller. 
 
 ![the create route within the routes module](https://i.imgur.com/F7TPwsX.png)
 
@@ -59,7 +59,7 @@ The create function calls the OpenAI API, passing a custom prompt generated usin
 
 ![OpenAI's API is called with custom prompt](https://i.imgur.com/kEJoMvh.png)
 
-The generatePrompt function takes the payload, containing the state of the model the user is creating, and returns a custom prompt by interpolating the user input.  The custom prompt is included in the OpenAI API call and the reponse is parsed from json and returned to the front-end where it is used to update the state and display the completion on the UI. 
+The generatePrompt function takes the payload, containing the state of the model the user is creating, and returns a custom prompt by interpolating the user input.  The custom prompt is included in the OpenAI third party API call and the reponse is parsed from json and returned to the front-end where it is used to update the state and display the text completion on the UI. 
 
 ![the generate prompt function that interpolates the payload from the front-end](https://i.imgur.com/3FaqQh2.png)
 
@@ -106,7 +106,7 @@ All illustrations are by <a  href="https://en.wikipedia.org/wiki/Carlo_Chiostri"
 ![Title page from the 1902 edition of Pinocchio](https://i.imgur.com/EErh0j4.png)
 
 ## Models and ERD 
-Geppetoo uses a very simple model scheme in conjunction with MongooseDB to achieve its CRUD.  
+Geppetto uses a very simple model scheme in conjunction with MongooseDB to achieve its CRUD.  
 
 Below is an image of the Entity Relationship Diagram made for this project using Lucidchart:
 
@@ -115,7 +115,7 @@ Below is an image of the Entity Relationship Diagram made for this project using
 ## Challenges 
 The most difficult part of this project was, thankfully, not the incorporation of OpenAI's API.  OpenAI's documentation is thorough and even provides starter project examples to help developers jump right into coding.  
 
-Most of the challenges encountered had to do with updating state in React.  There were certain instances where functions that should have been nested within child components were in the parent component, causing state issues that affected the map function from working properly.  Due to the asynchronous nature of certain functions and state updates, state was at least momentarily set to undefined.  
+Most of the challenges encountered had to do with updating state in React.  There were certain instances where functions that should have been nested within child components were in the parent component, causing state issues that affected mapping state to children components.  Due to the asynchronous nature of certain functions and state updates, state was at least momentarily set to undefined.  Since the map method can only work with arrays, this broke the code.    
 
 My takewaway is that state change should take place within the components directly affecting that change by passing state and setState down as props to the child component.  Once I adopted this approach the project flowed smoothly.  
 
