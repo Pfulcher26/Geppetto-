@@ -123,5 +123,5 @@ My takewaway is that state change should take place within the components direct
 This is a full stack MERN application (Mongoose, Express, React, Node) that utilizes OpenAI's DaVinci2 text-processing AI model.  
 
 ## Future Plans
-I would like to make this site more accessible by using the <a  href="https://app.uberduck.ai/" target="_blank">UberDuck AI API</a> to incorporate text-to-speech functionality, as well as build unit tests using Jest. 
+I would like to make this site more accessible by using the <a  href="https://app.uberduck.ai/" target="_blank">UberDuck AI API</a> to incorporate text-to-speech functionality, as well as build unit tests using Jest,  Mocha and Chai. 
 
