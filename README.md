@@ -63,15 +63,15 @@ The generatePrompt function takes the payload, containing the state of the model
 
 ![the generate prompt function that interpolates the payload from the front-end](https://i.imgur.com/3FaqQh2.png)
 
-![the puppet creat function on the frontend awaiting response and saving it to a variable](https://i.imgur.com/3FaqQh2.png)
+![the puppet create function on the frontend awaiting response and saving it to a variable](https://i.imgur.com/C5y18a9.png)
 
 ![displaying the result](https://i.imgur.com/fK4uqGF.png)
 
 An example of a completed prompt: 
 
-![An example of a completed prompt](https://i.imgur.com/C5y18a9.png)
+![An example of a completed prompt]([https://i.imgur.com/C5y18a9.png](https://i.imgur.com/WI63OJK.png))
 
-![An example text-completion](https://i.imgur.com/8Ccv7VF.png)
+![An example text-completion result being displayed on the UI](https://i.imgur.com/8Ccv7VF.png)
 
 Users can then save prompts and have them appear in a Prototypes component. 
 
