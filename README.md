@@ -69,7 +69,7 @@ The generatePrompt function takes the payload, containing the state of the model
 
 An example of a completed prompt: 
 
-![An example of a completed prompt]([https://i.imgur.com/C5y18a9.png](https://i.imgur.com/WI63OJK.png))
+![An example of a completed prompt](https://i.imgur.com/WI63OJK.png)
 
 ![An example text-completion result being displayed on the UI](https://i.imgur.com/8Ccv7VF.png)
 
